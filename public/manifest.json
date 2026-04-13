@@ -1,0 +1,22 @@
+﻿{
+    "display":  "standalone",
+    "icons":  [
+                  {
+                      "purpose":  "any maskable",
+                      "type":  "image/png",
+                      "sizes":  "192x192",
+                      "src":  "/assets/brand/favicons/favicon-192.png"
+                  },
+                  {
+                      "purpose":  "any maskable",
+                      "type":  "image/png",
+                      "sizes":  "512x512",
+                      "src":  "/assets/brand/favicons/favicon-512.png"
+                  }
+              ],
+    "background_color":  "#0b0b0d",
+    "theme_color":  "#0b0b0d",
+    "name":  "ThevibeSound records",
+    "start_url":  "/",
+    "short_name":  "ThevibeSound"
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TheVibeSound Records — Portada</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --accent:#ff5a5f;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%, #0b1020 60%);color:#fff}
+    .cover{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;box-sizing:border-box}
+    .card{width:100%;max-width:1100px;display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:18px;padding:36px;box-shadow:0 10px 40px rgba(2,6,23,0.6);backdrop-filter:blur(8px)}
+    .meta h1{font-size:44px;margin:0 0 8px 0;letter-spacing:-0.02em}
+    .meta p.lead{color:var(--muted);margin:0 0 18px 0;font-size:16px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#ff8a5b);color:#fff}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .art{display:flex;align-items:center;justify-content:center;background:var(--glass);border-radius:12px;padding:18px}
+    .art img{width:100%;height:auto;border-radius:8px;object-fit:cover}
+    .credits{margin-top:14px;color:var(--muted);font-size:13px}
+    @media (max-width:900px){.card{grid-template-columns:1fr;padding:24px}.meta h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <main class="cover">
+    <section class="card" role="region" aria-label="Portada TheVibeSound Records">
+      <div class="meta">
+        <h1>TheVibeSound Records</h1>
+        <p class="lead">Beats, grooves y producciones que marcan la diferencia. Nuevo lanzamiento — escucha ahora.</p>
+        <div class="cta">
+          <button class="btn primary" onclick="location.href='#play'">Escuchar</button>
+          <button class="btn ghost" onclick="location.href='#info'">Más info</button>
+        </div>
+        <div class="credits">Diseño por <strong>TheVibeSound</strong> · 2026</div>
+      </div>
+
+      <aside class="art" aria-hidden="false">
+        <!-- Si tienes una imagen real ponla en public/assets/cover.jpg -->
+        <img src="/assets/cover.jpg" alt="Portada del lanzamiento TheVibeSound Records" onerror="this.src='/assets/cover-placeholder.svg'">
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

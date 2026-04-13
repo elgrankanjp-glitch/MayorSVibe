@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff5a5f"/>
+      <stop offset="1" stop-color="#ff8a5b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#071021"/>
+  <g transform="translate(80,80)">
+    <rect width="1040" height="1040" rx="28" fill="url(#g)" opacity="0.95"/>
+    <text x="520" y="560" font-family="Arial, Helvetica, sans-serif" font-size="72" fill="white" text-anchor="middle" dominant-baseline="middle">TheVibeSound</text>
+    <text x="520" y="640" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="rgba(255,255,255,0.85)" text-anchor="middle">Portada placeholder</text>
+  </g>
+</svg>

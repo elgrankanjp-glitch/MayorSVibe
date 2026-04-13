@@ -1,0 +1,23 @@
+﻿import Image from "next/image";
+
+export default function Home() {
+  return (
+    <main style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",padding:32,background:"linear-gradient(180deg,#071021 0%, #0b1020 60%)"}}>
+      <section style={{maxWidth:1100,display:"grid",gridTemplateColumns:"1fr 420px",gap:32,alignItems:"center",background:"rgba(255,255,255,0.02)",padding:36,borderRadius:18}}>
+        <div>
+          <h1 style={{fontSize:44,margin:0}}>TheVibeSound Records</h1>
+          <p style={{color:"#9aa4b2",marginTop:8}}>Beats, grooves y producciones que marcan la diferencia. Nuevo lanzamiento — escucha ahora.</p>
+          <div style={{marginTop:18,display:"flex",gap:12}}>
+            <a href="#play" style={{padding:"12px 18px",borderRadius:10,background:"linear-gradient(90deg,#ff5a5f,#ff8a5b)",color:"#fff",fontWeight:600,textDecoration:"none"}}>Escuchar</a>
+            <a href="#info" style={{padding:"12px 18px",borderRadius:10,border:"1px solid rgba(255,255,255,0.06)",color:"#9aa4b2",textDecoration:"none"}}>Más info</a>
+          </div>
+          <div style={{marginTop:14,color:"#9aa4b2",fontSize:13}}>Diseño por <strong>TheVibeSound</strong> · 2026</div>
+        </div>
+
+        <aside style={{display:"flex",alignItems:"center",justifyContent:"center",background:"rgba(255,255,255,0.06)",borderRadius:12,padding:18}}>
+          <Image src="/assets/cover.jpg" alt="Portada del lanzamiento" width={380} height={380} style={{borderRadius:8,objectFit:"cover"}} />
+        </aside>
+      </section>
+    </main>
+  );
+}

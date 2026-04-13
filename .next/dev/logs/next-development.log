@@ -1,0 +1,15 @@
+{"timestamp":"00:00:01.906","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.907","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:01.907","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:01.908","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/types/**/*.ts'"}
+{"timestamp":"00:00:01.908","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
+{"timestamp":"00:00:01.908","source":"Server","level":"LOG","message":"  \t- plugins was updated to add { name: 'next' }"}
+{"timestamp":"00:00:01.908","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.909","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:01.909","source":"Server","level":"LOG","message":"  \t- esModuleInterop was set to true (requirement for SWC / babel)"}
+{"timestamp":"00:00:01.909","source":"Server","level":"LOG","message":"  \t- moduleResolution was set to bundler (to match modern bundler resolution)"}
+{"timestamp":"00:00:01.909","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:01.910","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:02.472","source":"Server","level":"WARN","message":"⚠ Duplicate page detected. src\\app\\page.jsx and src\\app\\page.tsx resolve to /"}
+{"timestamp":"00:00:02.472","source":"Server","level":"WARN","message":"⚠ Duplicate page detected. src\\app\\page.jsx and src\\app\\page.tsx resolve to /"}
+{"timestamp":"00:00:02.474","source":"Server","level":"LOG","message":""}
