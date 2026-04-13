@@ -1,18 +1,29 @@
-﻿import './globals.css';
-import React from 'react';
+﻿import "./globals.css"
+import { ReactNode } from "react"
 
 export const metadata = {
-  title: 'ThevibeSound records',
-  description: 'Música y vibración en cada nota'
-};
+  title: "TheVibeSound Records",
+  description: "Música y vibración en cada nota",
+  openGraph: { title: "TheVibeSound Records", description: "Música y vibración en cada nota", images: ["/assets/cover.jpg"] }
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang='es'>
-      <head />
-      <body style={{ margin:0, fontFamily: 'Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial' }}>
-        {children}
+    <html lang="es">
+      <body>
+        <header className="site-header">
+          <div className="container">
+            <div className="brand">
+              <div className="logo" aria-hidden="true" />
+              <h1>TheVibe Sound records</h1>
+            </div>
+          </div>
+        </header>
+        <main>{children}</main>
+        <footer className="site-footer">
+          <div className="container"><small>© TheVibeSound Records</small></div>
+        </footer>
       </body>
     </html>
-  );
+  )
 }
