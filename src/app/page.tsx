@@ -27,21 +27,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <section className="features container" aria-label="Características">
-        <article>
-          <h2>Artistas</h2>
-          <p>Descubre talento emergente y producciones exclusivas.</p>
-        </article>
-        <article>
-          <h2>Producción</h2>
-          <p>Servicios de mezcla, master y producción a medida.</p>
-        </article>
-        <article>
-          <h2>Eventos</h2>
-          <p>Conciertos y showcases para conectar con la audiencia.</p>
-        </article>
-      </section>
     </main>
   )
 }
