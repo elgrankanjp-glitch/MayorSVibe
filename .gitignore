@@ -1,2 +1,12 @@
-node_modules
+﻿# Node modules and build
 node_modules/
+.next/
+# Logs and temp
+dev.log
+project-backup.zip
+project-source.txt
+# OS files
+.DS_Store
+Thumbs.db
+# Editor
+.vscode/
