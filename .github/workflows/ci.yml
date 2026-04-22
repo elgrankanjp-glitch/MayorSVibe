@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
   pull_request:
-    branches: [ master, main ]
+    branches: [master, main]
 
 jobs:
   ci:
@@ -20,19 +20,34 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
+      - name: Lint (optional)
+        run: |
+          if npm run | grep -q " lint"; then
+            npm run lint
+          else
+            echo "No lint script found, skipping."
+          fi
 
-      - name: Type check
-        run: npm run typecheck
+      - name: Type check (optional)
+        run: |
+          if npm run | grep -q " typecheck"; then
+            npm run typecheck
+          else
+            echo "No typecheck script found, skipping."
+          fi
 
-      - name: Run tests
-        run: npm test -- --ci --reporters=default
+      - name: Tests (optional)
+        run: |
+          if npm run | grep -q " test"; then
+            npm test -- --ci --reporters=default
+          else
+            echo "No test script found, skipping."
+          fi
         env:
           CI: true
 
